@@ -19,7 +19,7 @@ def predict_and_save_results(stacking_classifier):
 
     output_file_name = input(
         "Enter the name of the CSV file to save (without extension): ")
-    output_directory = 'diabetes_prediction/output'
+    output_directory = 'diabetes_training_models/diabetes_prediction/output'
     os.makedirs(output_directory, exist_ok=True)
     output_file_path = os.path.join(
         output_directory, output_file_name + ".csv")
